@@ -21,20 +21,20 @@ code segment use16
 	
 	
 	
-	; init data
-	mov ax,data
-	mov ds,ax
-	mov es,ax
-	; init stack
-	mov ax,stack
-	mov bp,ax
-	mox sp,offset head
+
 	
 	
 	
 	
 	start:
-	
+		; init data
+		mov ax,data
+		mov ds,ax
+		mov es,ax
+		; init stack
+		mov ax,stack
+		mov bp,ax
+		mov sp,offset head
 		;code here
 	
 	
