@@ -9,6 +9,7 @@ name default
 
 data segment use16
 	; vars
+	
 data ends
 
 stack segment use16
@@ -18,7 +19,7 @@ stack ends
 
 code segment use16
 	
-	
+	ASSUME CS: code, DS: data, ES: data, SS: stack
 	
 	
 
